@@ -1,0 +1,15 @@
+makecert.exe -r                         // self signed
+             -n "CN=DevelopmentRoot"    // name
+             -pe                        // exportable
+             -sv DevelopmentRoot.pvk    // name of private key file
+             -a sha1                    // hashing algorithm
+             -len 2048                  // key length
+             -b 01/21/2010              // valid from 
+             -e 01/21/2030              // valid to
+             -cy authority              // certificate type
+             DevelopmentRoot.cer        // name of certificate file
+             
+--pvk2pfx copies public key and private key information in .cer & .pvk file to a personal information exchange
+pvk2pfx.exe -pvk DevelopmentRoot.pvk    // Specifies the name of a .pvk file
+            -spc DevelopmentRoot.cer    // Specifies the name and extension of the Software Publisher Certificate (SPC) file that contains the certificate
+            -pfx DevelopmentRoot.pfx    // Specifies the name of a .pfx file.
