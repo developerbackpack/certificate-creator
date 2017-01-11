@@ -1,2 +1,2 @@
-makecert.exe -r -n "CN=DevelopmentRoot" -pe -sv DevelopmentRoot.pvk -a sha1 -len 2048 -b 01/21/2010 -e 01/21/2030 -cy authority DevelopmentRoot.cer
+makecert.exe -r -n "CN=DevelopmentRoot" -pe -sv DevelopmentRoot.pvk -a sha1 -len 2048 -b 01/21/2016 -e 01/21/2030 -cy authority DevelopmentRoot.cer
 pvk2pfx.exe -pvk DevelopmentRoot.pvk -spc DevelopmentRoot.cer -pfx DevelopmentRoot.pfx

@@ -1,2 +1,2 @@
-makecert.exe -iv DevelopmentRoot.pvk -ic DevelopmentRoot.cer -n "CN=dev.local" -pe -sv dev.local.pvk -a sha1 -len 2048 -b 01/21/2010 -e 01/21/2020 -sky exchange dev.local.cer -eku 1.3.6.1.5.5.7.3.1
+makecert.exe -iv DevelopmentRoot.pvk -ic DevelopmentRoot.cer -n "CN=dev.local" -pe -sv dev.local.pvk -a sha1 -len 2048 -b 01/21/2016 -e 01/21/2030 -sky exchange dev.local.cer -eku 1.3.6.1.5.5.7.3.1
 pvk2pfx.exe -pvk dev.local.pvk -spc dev.local.cer -pfx dev.local.pfx

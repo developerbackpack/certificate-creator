@@ -5,11 +5,11 @@ makecert.exe -iv DevelopmentRoot.pvk    // file name of root priv key
              -sv dev.local.pvk          // name of private key file
              -a sha1                    // hashing algorithm
              -len 2048                  // key length
-             -b 01/21/2010              // valid from
+             -b 01/21/2017              // valid from
              -e 01/21/2020              // valid to
              -sky exchange              // certificate type
              dev.local.cer              //name of certificate file
-             -eku 1.3.6.1.5.5.7.3.1     // extended key usuage
+             -eku 1.3.6.1.5.5.7.3.1     // extended key usage
 
 --pvk2pfx copies public key and private key information in .cer & .pvk file to a personal information exchange
 pvk2pfx.exe -pvk dev.local.pvk         // Specifies the name of a .pvk file
